@@ -30,7 +30,7 @@ For self-hosting on a public server, configure HTTPS and proxy WebSocket upgrade
 ## Implemented rules and explicit interpretations
 
 - 52-card deck, no jokers, five private cards per player; one initial face-up card.
-- Play at least one card: a single, pair, three of a kind, four of a kind, or same-suit consecutive run of at least three. Only one group per turn. Aces are low only (A-2-3 valid; Q-K-A invalid). Any length run that fits the hand is allowed.
+- Play at least one card: a single, pair, three of a kind, four of a kind, or same-suit consecutive run of at least three. Only one group per turn. Aces are low and high (A-2-3 valid; Q-K-A valid; K-A-2 invalid). Any length run that fits the hand is allowed.
 - Draw exactly one card AFTER playing. Choose the stock or any card from the previous play, not the current play. The initial face-up card is the first player's eligible previous play. Older discards recycle when stock empties, excluding the eligible previous play.
 - Hand values: A=1, ranks 2–10 numeric, J/Q/K=10.
 - The declaration compares against all other non-eliminated players. Any opponent at or below the declarer's total catches it. Only the declarer then adds their own hand total plus the highest opposing hand total (not merely the highest among players who caught them).
